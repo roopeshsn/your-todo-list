@@ -19,11 +19,13 @@
     </header>
 
     <div id="container">
-      <div id="greeting">Hi <span id="name">Roopesh</span></div>
-      <span class="date" id="day"></span>
-      <span class="date" id="month"></span>
-      <span class="date" id="date"></span>
-      <span class="date" id="year"></span>
+      <div id="greeting">Hi <span id="username"></span></div>
+      <div>
+        <span class="date" id="day"></span>
+        <span class="date" id="month"></span>
+        <span class="date" id="date"></span>
+        <span class="date" id="year"></span>
+      </div>
     </div>
 
     <form id="new-todo-form">
@@ -51,7 +53,6 @@
         </label>
         <button class="button button-update">
           <i class="fas fa-pen-square" data-button-update></i>
-          <!-- <i class="fas fa-edit"></i> -->
         </button>
         <button class="button button-delete">
           <i class="fas fa-minus-square" data-button-delete></i>
@@ -60,5 +61,31 @@
     </template>
 
     <ul id="list"></ul>
+
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Greetings to you!!</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Hi Major! My name is "Your Todo List". Hope you're good and safe. As my
+        name suggest, you can save all your Todos here. I offer you to add,
+        update and, delete your todos. Thanks for choosing me. I'll be great
+        companion in your daily routine.
+      </div>
+      <div class="modal-ps">
+        P.S. I don't like to call you as Major. I like to call you by name. Can
+        I know your name please!
+      </div>
+      <div class="modal-buttons">
+        <button id="yes-button" class="modal-button">Yeah, Sure!!</button>
+        <button id="no-button" class="modal-button">No, Sorry!!</button>
+      </div>
+      <div id="name-div" class="name-div">
+        <input id="name-input" placeholder="Your name..." />
+        <button id="done-button">Done!</button>
+      </div>
+    </div>
+    <div id="overlay"></div>
   </body>
 </html>
