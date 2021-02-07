@@ -154,10 +154,8 @@ function operationDay(day) {
     return 'Friday'
   } else if (day === 6) {
     return 'Saturday'
-  } else if (day === 7) {
-    return 'Sunday'
   } else {
-    return
+    return 'Sunday'
   }
 }
 
@@ -184,10 +182,8 @@ let operationMonth = function (month) {
     return 'Oct'
   } else if (month === 10) {
     return 'Nov'
-  } else if (month === 11) {
-    return 'Dec'
   } else {
-    return
+    return 'Dec'
   }
 }
 
