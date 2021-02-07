@@ -355,7 +355,7 @@ li label span {
     justify-content: space-between;
     align-items: center;
     max-width: 350px;
-    padding: 5px;
+    padding: 5px 5px 5px 10px;
     margin: 1rem;
   }
 
@@ -401,8 +401,8 @@ li label span {
   }
 }
 
-/* @media all and (max-width: 380px) {
-  #container {
-    max-width: 350px;
+@media all and (max-width: 380px) {
+  #save-button {
+    margin-left: 15px;
   }
-} */
+}
