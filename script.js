@@ -134,6 +134,7 @@ function updateTodo(todos, todoId) {
 
 function updateSaveTodo(todos, todoId, Input) {
   const todoData = todos.find((todo) => todo.id === todoId)
+  if (Input == '') return
   todoData.name = Input
   saveTodos()
   loadTodos()
