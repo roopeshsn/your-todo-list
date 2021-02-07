@@ -361,6 +361,7 @@ li label span {
 
   .list-item-label:hover > [data-list-item-text] {
     color: #30e8bf;
+    text-decoration: none;
   }
 
   form input {
