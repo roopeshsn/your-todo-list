@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Advanced Todo List</title>
+    <title>Your Todo List</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/d787c8dd54.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
+    <script src="https://kit.fontawesome.com/d787c8dd54.js" crossorigin="anonymous" defer></script>
   </head>
   <body>
     <header>
@@ -21,10 +17,7 @@
     <div id="container">
       <div id="greeting">Hi <span id="username"></span></div>
       <div>
-        <span class="date" id="day"></span>
-        <span class="date" id="month"></span>
-        <span class="date" id="date"></span>
-        <span class="date" id="year"></span>
+        <span class="date"></span>
       </div>
     </div>
 
@@ -34,12 +27,7 @@
     </form>
 
     <div class="update">
-      <input
-        type="text"
-        data-update-input
-        placeholder="Update todo..."
-        autofocus
-      />
+      <input type="text" data-update-input placeholder="Update todo..." />
       <button id="save-button" data-button-save>Save</button>
     </div>
 
@@ -66,14 +54,13 @@
         <button data-close-button class="close-button">&times;</button>
       </div>
       <div class="modal-body">
-        Hi Major! My name is "Your Todo List". Hope you're good and safe. As my
-        name suggest, you can save all your Todos here. I offer you to add,
-        update and, delete your todos. Thanks for choosing me. I'll be great
-        companion in your daily routine.
+        Hi Major! My name is "Your Todo List". Hope you're good and safe. As my name suggest, you
+        can save all your Todos here. I offer you to add, update and, delete your todos. Thanks for
+        choosing me. I'll be great companion in your daily routine.
       </div>
       <div class="modal-ps">
-        P.S. I don't like to call you as Major. I like to call you by name. Can
-        I know your name please!
+        P.S. I don't like to call you as Major. I like to call you by name. Can I know your name
+        please!
       </div>
       <div class="modal-buttons">
         <button id="yes-button" class="modal-button">Yeah, Sure!!</button>
