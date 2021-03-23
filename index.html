@@ -6,48 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/d787c8dd54.js" crossorigin="anonymous" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Your Todo list</h1>
-    </header>
-    <div class="wrapper">
-      <div id="container">
-        <div id="greeting">Hi <span id="username"></span></div>
-        <div>
-          <span class="date"></span>
+    <main>
+      <div class="wrapper">
+        <div id="container">
+          <div id="greeting">Hi <span id="username"></span></div>
+          <div>
+            <span class="date"></span>
+          </div>
         </div>
+        <header>
+          <h1>Your Todo list</h1>
+        </header>
+        <form id="new-todo-form">
+          <input type="text" id="todo-input" placeholder="Add a todo..." />
+          <button type="submit"><i class="fas fa-plus-square"></i></button>
+        </form>
+
+        <div class="update">
+          <input type="text" data-update-input placeholder="Update todo..." />
+          <button id="save-button" data-button-save>Save</button>
+        </div>
+        <template id="list-item-template">
+          <li class="list-item">
+            <label class="list-item-label">
+              <input class="checkbox" type="checkbox" data-list-item-checkbox />
+              <span data-list-item-text></span>
+            </label>
+            <button class="button button-update">
+              <i class="fas fa-pen-square" data-button-update></i>
+            </button>
+            <button class="button button-delete">
+              <i class="fas fa-minus-square" data-button-delete></i>
+            </button>
+          </li>
+        </template>
+
+        <ul id="list"></ul>
       </div>
-
-      <form id="new-todo-form">
-        <input type="text" id="todo-input" placeholder="Add a todo..." />
-        <button type="submit"><i class="fas fa-plus-square"></i></button>
-      </form>
-
-      <div class="update">
-        <input type="text" data-update-input placeholder="Update todo..." />
-        <button id="save-button" data-button-save>Save</button>
-      </div>
-
-      <template id="list-item-template">
-        <li class="list-item">
-          <label class="list-item-label">
-            <input class="checkbox" type="checkbox" data-list-item-checkbox />
-            <span data-list-item-text></span>
-          </label>
-          <button class="button button-update">
-            <i class="fas fa-pen-square" data-button-update></i>
-          </button>
-          <button class="button button-delete">
-            <i class="fas fa-minus-square" data-button-delete></i>
-          </button>
-        </li>
-      </template>
-
-      <ul id="list"></ul>
-    </div>
+    </main>
 
     <div class="modal" id="modal">
       <div class="modal-header">

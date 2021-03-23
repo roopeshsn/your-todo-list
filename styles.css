@@ -5,15 +5,26 @@
 }
 
 body {
-  background: #30e8bf;
+  background: #fce38a;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+  max-width: 22rem;
+  margin: 2rem auto;
+  border-radius: 1.25rem;
 }
 
 header {
-  color: white;
+  color: #fce38a;
   text-align: center;
-  border-bottom: 1px solid white;
   padding: 0.5rem;
+  font-family: 'Caveat', cursive;
 }
 
 header h1 {
@@ -23,23 +34,18 @@ header h1 {
 
 /* Date and Time */
 
-.wrapper {
-  margin-top: 2rem;
-}
-
 #container {
-  max-width: 400px;
   background: white;
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem auto;
+  margin: 0 auto;
   padding: 1rem;
   text-align: center;
   font-size: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
 }
 
 #username {
@@ -57,7 +63,6 @@ form {
   background: white;
   justify-content: space-between;
   align-items: center;
-  max-width: 400px;
   margin: 1rem auto;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -70,7 +75,6 @@ form input {
   outline: none;
   border: none;
   padding: 10px 15px;
-  padding-left: 40px;
 }
 
 form button {
